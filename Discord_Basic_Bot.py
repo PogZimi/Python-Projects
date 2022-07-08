@@ -1,4 +1,4 @@
-#----------------------------------------------------------
+#-----------------[Bot.py]-----------------------------
 
 # Learn how to make a basic Discord bot in Python : 
 # Published = 12/6/2022
@@ -6,7 +6,7 @@
 
 #----------------------------------------------------------
 
-# Before using , please install discord API Wrapper by pasting this command in terminal -->  pip3 install discord ) 
+# Before using , please install discord API Wrapper by pasting this command in terminal -->  pip3 install discord 
 
 import discord  # API Wrapper for discord
 
@@ -29,10 +29,11 @@ async def on_message(message):
      if message.author == client.user : # Means if the one who messages(is a bot) then dont reply 
         return 
      
-    
+     # Simple text messages
      if message.content.startswith("/hi"):
         await message.channel.send("Hello"); # Sends hello message when someday says /hi
      
+     # Embed messages
      if message.content.startswith("/embed"): 
       myEmbed;
       myEmbed.add_field(name = "Bot Name :  ", value = "Basic_Bot_in_py", inline = False )
@@ -41,6 +42,7 @@ async def on_message(message):
       await message.channel.send(Embed = myEmbed); # Sends Embed message when we call "/embed" to channel                       
      
 
-client.run('TOKEN');
+client.run('PASTE_YOUR_BOT_TOKEN'); # Runs our bot
+
 # Inside the token paste the bot token needed to connect the code to bot so we can run this stuff, without token bot would not run
 # Go to developer portal , create new application, create new bot, copy token & paste inside client.run('TOKEN');
