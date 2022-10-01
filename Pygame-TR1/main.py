@@ -19,6 +19,7 @@ p_change = 0
 p_change2 = 0
 
 # Player Settings 
+# These decimal values are calculated by the program, just print the co-ordinates when they are being changed ( Like when clicking left arrow key)
 pX1 = 374.79999999997835
 pX2 = 32.900000000000496
 p3 = 0
