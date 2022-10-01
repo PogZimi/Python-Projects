@@ -93,19 +93,19 @@ while running:
     if(pX <= 0):
          pX = 0
     elif(pX >= 736):
-         pX = 0
+         pX = 736
     if(pY <= 0):
          pY = 0
     elif(pY >= 536):
-         pY = 0
+         pY = 536
     if(pX1 <= 0):
          pX1 = 0
     elif(pX1 >= 736):
-         pX1 = 0
+         pX1 = 736
     if(pX2 <= 0):
          pX2 = 0
     elif(pX2 >= 536):
-         pX2 = 0
+         pX2 = 536
     
     # Updating Co-ordinates of both players 
     pX += p_change
